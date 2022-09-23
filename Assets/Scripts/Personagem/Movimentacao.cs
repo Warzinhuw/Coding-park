@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Movimentar : MonoBehaviour {
+public class Movimentacao : MonoBehaviour {
 
     private Animator playerAnimator;
     private Rigidbody2D playerRigidBody;
@@ -31,6 +31,7 @@ public class Movimentar : MonoBehaviour {
     }
 
     void Flip() {
+        Debug.Log("Freeze rotation: " + playerRigidBody.freezeRotation);
         estaOlhandoParaDireita = !estaOlhandoParaDireita;
         Vector3 scale = transform.localScale;
         scale.x *= -1;
@@ -46,9 +47,11 @@ public class Movimentar : MonoBehaviour {
     }
 
     void MovePlayer(float movimentoH) {
-        playerRigidBody.velocity = new Vector2(movimentoH * velocidade, playerRigidBody.velocity.y);
-        if (movimentoH < 0 && estaOlhandoParaDireita || (movimentoH > 0 && !estaOlhandoParaDireita)) {
-            Flip();
+        if (!playerRigidBody.isKinematic) {
+            playerRigidBody.velocity = new Vector2(movimentoH * velocidade, playerRigidBody.velocity.y);
+            if (movimentoH < 0 && estaOlhandoParaDireita || (movimentoH > 0 && !estaOlhandoParaDireita)) {
+                Flip();
+            }
         }
     }
 
