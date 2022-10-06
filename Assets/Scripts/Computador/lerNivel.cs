@@ -36,6 +36,9 @@ public class lerNivel : MonoBehaviour
         else if (estadoFonte == 1) {
             spriteRenderer.sprite = spritesFonte[1];
         }
+        else if (estadoFonte == 2) {
+            spriteRenderer.sprite = spritesFonte[2];
+        }
         else {
             Debug.Log("VALOR INVÁLIDO!");
         }
