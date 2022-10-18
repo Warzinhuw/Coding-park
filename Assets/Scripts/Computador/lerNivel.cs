@@ -2,41 +2,49 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class lerNivel : MonoBehaviour
-{
+public class lerNivel : MonoBehaviour {
     [Header("Fonte de água")]
     public GameObject fonte;
     public Sprite[] spritesFonte;
 
+    private TMP_InputField inputField;
+
     // Start is called before the first frame update
-    void Start()
-    {
-        gameObject.GetComponent<TMP_InputField>().onEndEdit.AddListener(RegularFonte);
+    void Start() {
+        inputField = gameObject.GetComponent<TMP_InputField>();
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        
+    void Update() {
+
+    }
+
+    public void incrementarNivelFonte() {
+        int novoEstadoFonte = int.Parse(inputField.text) + 1;
+        inputField.text = novoEstadoFonte.ToString();
+    }
+
+    public void decrementarNivelFonte() {
+        int novoEstadoFonte = int.Parse(inputField.text) - 1;
+        inputField.text = novoEstadoFonte.ToString();
     }
 
 
-    void RegularFonte(string estado) {
+    public void RegularFonte() {
 
         SpriteRenderer spriteRenderer = fonte.GetComponent<SpriteRenderer>();
 
-        // Variável que armazena o estado da fonte, pode ser qualquer número inteiro (números sem ",")
-        int estadoFonte = int.Parse(estado);
-
-        // desligado = 0, ligado = 1
-        if (estadoFonte == 0) {
+        // desligado = 0, ligado = 1, cheio = 2
+        int estado = int.Parse(inputField.text);
+        if (estado == 0) {
             spriteRenderer.sprite = spritesFonte[0];
         }
-        else if (estadoFonte == 1) {
+        else if (estado == 1) {
             spriteRenderer.sprite = spritesFonte[1];
         }
-        else if (estadoFonte == 2) {
+        else if (estado == 2) {
             spriteRenderer.sprite = spritesFonte[2];
         }
         else {

@@ -1,0 +1,4128 @@
+fileFormatVersion: 2
+guid: bfd0f1f90e3094a469b5d75661c2759f
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "bot\xF5es UI_0"
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 5374
+        width: 410
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d36902314aed26742beec7887960e9f9
+      internalID: 66242104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_1"
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 5374
+        width: 414
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2edf273f7eb9b1c49b0a6a9649bcec65
+      internalID: -320657580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_2"
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 5374
+        width: 413
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbe9cd10137f92e42ad7efabfdf8cb13
+      internalID: -461524960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_3"
+      rect:
+        serializedVersion: 2
+        x: 1462
+        y: 5374
+        width: 413
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbe554853eb81e249ae33a82219ee9bc
+      internalID: -1895391341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_4"
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 5175
+        width: 410
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 012fd47f03cada14ba5cacdf427d5f58
+      internalID: 2035476971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_5"
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 5175
+        width: 414
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a8d159849f55e34a876e32baf5657b7
+      internalID: 1913721400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_6"
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 5175
+        width: 413
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f8005a551726f4408b8d9fe05c5fb1d
+      internalID: -916177982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_7"
+      rect:
+        serializedVersion: 2
+        x: 1462
+        y: 5175
+        width: 413
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5af8139d2f0633949982df3c2f3c71db
+      internalID: -621041692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_8"
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 4946
+        width: 181
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae542a31bef7dd04e85c16658c73f361
+      internalID: -1186744969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_9"
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 4946
+        width: 184
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d525352894ee3b54e85d19c88f966992
+      internalID: -1628152354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_10"
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 4946
+        width: 184
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc9d91fc85554de4f9e480a81fc68db1
+      internalID: 1659624917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_11"
+      rect:
+        serializedVersion: 2
+        x: 1219
+        y: 4946
+        width: 182
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7993f96c61a5ca54fa46bba14b88bfa5
+      internalID: 747465226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_12"
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 4695
+        width: 182
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72e39ee884336f045b952d79025de70c
+      internalID: 388593946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_13"
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 4695
+        width: 181
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 904e321da63882047b992f12371c08cd
+      internalID: 31067559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_14"
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 4695
+        width: 182
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00c40342cdb2aa34ea491fbfcaa26d8f
+      internalID: -1777137866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_15"
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 4695
+        width: 182
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5aa9ef25869c5e429aa394e07152a38
+      internalID: 1221417264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_16"
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 4695
+        width: 182
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 261939eca6d4da845842c1a74897e66d
+      internalID: -1155902507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_17"
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 4695
+        width: 181
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 708572067944a78409c888b535b9872e
+      internalID: -1201724529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_18"
+      rect:
+        serializedVersion: 2
+        x: 1445
+        y: 4695
+        width: 182
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96d0ac3c5b8ccbf4088707ce1b85dfba
+      internalID: 2087592785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_19"
+      rect:
+        serializedVersion: 2
+        x: 1657
+        y: 4695
+        width: 184
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7126e3af9a1b2c84e94d0a99dc7ff837
+      internalID: -1280619399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_20"
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 4478
+        width: 182
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c737623190910314e9f72991c92f695a
+      internalID: -915845617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_21"
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 4478
+        width: 181
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eae3ceb7a985a6543b7fbd7f811e8dee
+      internalID: 1256079931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_22"
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 4478
+        width: 182
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 380f43c3c0039d843badf8b4456f33bd
+      internalID: 1109789752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_23"
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 4478
+        width: 182
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86dddea54c09d324fbe3691fb4605d91
+      internalID: -754033780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_24"
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 4478
+        width: 182
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5abdc004dd55f1e4bab390cc0cb6a8dc
+      internalID: -1610234309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_25"
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 4478
+        width: 181
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cb22ba5750d41b429d5c6e43a1f4e98
+      internalID: 2125303516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_26"
+      rect:
+        serializedVersion: 2
+        x: 1445
+        y: 4478
+        width: 182
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1db5cb90d6b06b744b2f93caa7d59fd4
+      internalID: 971488334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_27"
+      rect:
+        serializedVersion: 2
+        x: 1657
+        y: 4478
+        width: 184
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a413ead31bcb97b41a777754e67b97c5
+      internalID: 1110062096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_28"
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 4263
+        width: 182
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78ba6de356689a74ba3b404c4ae7c140
+      internalID: 472198413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_29"
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 4263
+        width: 181
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fef4f053ffc9b5343afa08f20ee2f8fb
+      internalID: 473914787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_30"
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 4263
+        width: 182
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e32144150e713b94e98f36ba7b86c955
+      internalID: 1501105127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_31"
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 4263
+        width: 182
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17df04edf33e8ec4e869d00f5891e6a3
+      internalID: -360161279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_32"
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 4263
+        width: 182
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16e38dbc88982a743bc709de74607e2a
+      internalID: 1587457069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_33"
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 4263
+        width: 181
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aec60e0906ee4b4484db541b15b994e
+      internalID: 690969768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_34"
+      rect:
+        serializedVersion: 2
+        x: 1445
+        y: 4263
+        width: 182
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74b39413e4377124b9f70665c8a7fe45
+      internalID: -1761441202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_35"
+      rect:
+        serializedVersion: 2
+        x: 1657
+        y: 4263
+        width: 184
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 115dcc81cb137604bb5a276cad93ea19
+      internalID: 1242426756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_36"
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 4048
+        width: 182
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a24f68102494004c9688fd3e8728038
+      internalID: -216401782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_37"
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 4048
+        width: 181
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 303b6dd280debec4eb181d5414d59cdb
+      internalID: -355586056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_38"
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 4048
+        width: 182
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 215eaf18f5c94e84dbfc3ef885656a12
+      internalID: 1106660292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_39"
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 4048
+        width: 182
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 721a0e192e5f85540852ac319cb12bdb
+      internalID: -995465656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_40"
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 4048
+        width: 182
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64a65372d2d57254c997abe8c3ac43c6
+      internalID: -1871821533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_41"
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 4048
+        width: 181
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ad4708203b0e9f4b8ff4d555dba695a
+      internalID: 407201226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_42"
+      rect:
+        serializedVersion: 2
+        x: 1445
+        y: 4048
+        width: 182
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11ff7433b01579043bef5cf71e15600c
+      internalID: 2124456808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_43"
+      rect:
+        serializedVersion: 2
+        x: 1657
+        y: 4048
+        width: 184
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64fdc718fb2f3284083af4e7a16d2244
+      internalID: 376978115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_44"
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 3830
+        width: 182
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6d88b4ffbc66e242875e3f4ad4d06b0
+      internalID: -303635636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_45"
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 3830
+        width: 181
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b2a460ed232da14c9b2ca8222188d3e
+      internalID: -611993533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_46"
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 3830
+        width: 182
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ab3d9c3ab889d74dbf2ad5f6f8f179c
+      internalID: -261751888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_47"
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 3830
+        width: 182
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc2e27be6edb78f43aeddbf4d1e2286c
+      internalID: 1113938045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_48"
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 3830
+        width: 182
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0c8e2c93f80d474895bfc3c8dbed998
+      internalID: -1610450800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_49"
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 3830
+        width: 181
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2442edf7692b7184ab564f4f178e928d
+      internalID: -290006561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_50"
+      rect:
+        serializedVersion: 2
+        x: 1445
+        y: 3830
+        width: 182
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61c8fb606514446489a97f6c9c8c6dbc
+      internalID: -729535815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_51"
+      rect:
+        serializedVersion: 2
+        x: 1657
+        y: 3830
+        width: 184
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf6b4ed761d0798488a5aaaf3feae7bc
+      internalID: 955156769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_52"
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 3615
+        width: 182
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 809617406a76b134aa50f76fce76e8bf
+      internalID: 1978784448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_53"
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 3615
+        width: 181
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e1a50c057d65a94788605bec4f36936
+      internalID: 264966004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_54"
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 3615
+        width: 182
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5323b96882fcdbe4c8b9fb58219d9818
+      internalID: -1258068441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_55"
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 3615
+        width: 182
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 928d7430b6c8c3240b25307e65d5db88
+      internalID: 458344968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_56"
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 3615
+        width: 182
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27a088c09f10d3844a2220dd1c5be3ee
+      internalID: -836092842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_57"
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 3615
+        width: 181
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcc4b87842cc0714d96da3729c10f994
+      internalID: -831783293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_58"
+      rect:
+        serializedVersion: 2
+        x: 1445
+        y: 3615
+        width: 182
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d7cebd4eb5b8a349a9b8275d4493228
+      internalID: -1358685489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_59"
+      rect:
+        serializedVersion: 2
+        x: 1657
+        y: 3615
+        width: 184
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 090693d584f7bcb488f111e706083ec4
+      internalID: -819182960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_60"
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 3400
+        width: 182
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 934ab6e45e18c9c429db5708501f56a4
+      internalID: -89238289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_61"
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 3400
+        width: 181
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c11d38a4a24d2c843af9acd133f6adb2
+      internalID: -1933078534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_62"
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 3400
+        width: 182
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 364cf2846ab8ad94f97dbea2a0ffb6db
+      internalID: 1295813888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_63"
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 3400
+        width: 182
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbbeae86a9f4766499850924d89fbee9
+      internalID: -1703493999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_64"
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 3400
+        width: 182
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77cd7b49e7ccfca4688818ea517af0e6
+      internalID: 1922523294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_65"
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 3400
+        width: 181
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d61afe2b73037be44899bb104353a7c1
+      internalID: -543583474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_66"
+      rect:
+        serializedVersion: 2
+        x: 1445
+        y: 3400
+        width: 182
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e81cba586fca65548bef2bd0ff964873
+      internalID: 959207399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_67"
+      rect:
+        serializedVersion: 2
+        x: 1657
+        y: 3400
+        width: 184
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c7862fea9e3a384cbdd6cdcee715699
+      internalID: 1532031160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_68"
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 3183
+        width: 182
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5133dbaa0f7349e44becfea1c73cdde3
+      internalID: 487394297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_69"
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 3183
+        width: 181
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd118c46191eae24e9af4922164c7b23
+      internalID: -687201687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_70"
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 3183
+        width: 182
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4f61fac849896f41aa3365d9eb4c148
+      internalID: 1159880494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_71"
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 3183
+        width: 182
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c13679b4c5d37d41a6b1d13dab3d091
+      internalID: -1827350141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_72"
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 3183
+        width: 182
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68fc351bcbd654a49b3d6a47d3aba631
+      internalID: -1611884438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_73"
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 3183
+        width: 181
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c69af39427009584a832f110659887fa
+      internalID: -405963174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_74"
+      rect:
+        serializedVersion: 2
+        x: 1445
+        y: 3183
+        width: 182
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d679f4770c962aa45887ed6ee84947a2
+      internalID: 1027458814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_75"
+      rect:
+        serializedVersion: 2
+        x: 1657
+        y: 3183
+        width: 184
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 276b6070e4ee84443a1e90a750038b24
+      internalID: 417520814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_76"
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 2967
+        width: 182
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78c2af86877983c4cac05a12c036739f
+      internalID: 1724236643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_77"
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 2967
+        width: 181
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 863d2e8fcda48fa40aa4b4aec923ca13
+      internalID: -1929196984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_78"
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 2967
+        width: 182
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35b5c037b3e14c1499ffec0f96ceeb35
+      internalID: -905674968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_79"
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 2967
+        width: 182
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb21c7b583664b74aa98eb6aa95d71ca
+      internalID: -115087066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_80"
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 2967
+        width: 182
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7669ce7b6f6bedd429beebe5985c6eaf
+      internalID: 169921462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_81"
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 2967
+        width: 181
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7315f34fc5e475341a3259ada8772b45
+      internalID: -1600496632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_82"
+      rect:
+        serializedVersion: 2
+        x: 1445
+        y: 2967
+        width: 182
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3fe987a7ea34334ba17c48b533a78a7
+      internalID: -335147065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_83"
+      rect:
+        serializedVersion: 2
+        x: 1657
+        y: 2967
+        width: 184
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98f940f971e5a984da1089459e2af945
+      internalID: 342785282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_84"
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 2752
+        width: 182
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9962c1fd3212614dbb2c59190492fff
+      internalID: 34657212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_85"
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 2752
+        width: 181
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c5c6ad913cd68b4a881fa9f8723ccba
+      internalID: -844969378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_86"
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 2752
+        width: 182
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 636cd416d8002ff4e87d6fda26f9dd86
+      internalID: -630897881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_87"
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 2752
+        width: 182
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a2ff0c283b514644870017331c4a569
+      internalID: 1606607007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_88"
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 2752
+        width: 182
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ad087f7d79634849a359ed3e7e1ab3e
+      internalID: 2028202623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_89"
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 2752
+        width: 181
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dfedfd3004b9dd47a3cbdc75812d3f9
+      internalID: -1804349336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_90"
+      rect:
+        serializedVersion: 2
+        x: 1445
+        y: 2752
+        width: 182
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d92ba89af6c670f4bb3f4bae06295bd2
+      internalID: 289212801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_91"
+      rect:
+        serializedVersion: 2
+        x: 1657
+        y: 2752
+        width: 184
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23ed35e37776840468a9fab1014a66fb
+      internalID: 712766403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_92"
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 2535
+        width: 182
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f877db3c4facb14a841626844f0eb19
+      internalID: 1916356528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_93"
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 2535
+        width: 181
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdc68c97e5673c54d89c9b8a5877781f
+      internalID: -1425209263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_94"
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 2535
+        width: 182
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79ae541f75afe1d4a953eed3d81334cf
+      internalID: -253318317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_95"
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 2535
+        width: 182
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74c95418e93d2b641bbae6f3db172faa
+      internalID: -885568115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_96"
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 2535
+        width: 182
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca0bf1e993fccd1479c3bd789074e5c4
+      internalID: 1047721431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_97"
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 2535
+        width: 181
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f904897ca6bdde246802c17d8612e4af
+      internalID: -897348945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_98"
+      rect:
+        serializedVersion: 2
+        x: 1445
+        y: 2535
+        width: 182
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c6c265b270bb504a85a0724fbf2ef37
+      internalID: -149061414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_99"
+      rect:
+        serializedVersion: 2
+        x: 1657
+        y: 2535
+        width: 184
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65c6469ef1a02dc40b1815b165c916eb
+      internalID: -107505777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_100"
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 2320
+        width: 182
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dc555185f3e05a4787a4a941b0c5af7
+      internalID: 174889603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_101"
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 2320
+        width: 181
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42a73e2e73bf5fd43811cc092b51c913
+      internalID: -1324581370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_102"
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 2320
+        width: 182
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12c388b986ba4814ea705fa2e0b4119e
+      internalID: -1575838611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_103"
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 2320
+        width: 182
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e340b0b39ac30b4ca4410d09f511946
+      internalID: -702685757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_104"
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 2320
+        width: 182
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abc58215092d1f34f8e6f4df33dec9b2
+      internalID: 1616744642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_105"
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 2320
+        width: 181
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b20f3d26ed06de49b2ebce7c4e5d265
+      internalID: -1903534207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_106"
+      rect:
+        serializedVersion: 2
+        x: 1445
+        y: 2320
+        width: 182
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eceb821e1f44a9c4884460ac197e2a29
+      internalID: -1324949850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_107"
+      rect:
+        serializedVersion: 2
+        x: 1657
+        y: 2320
+        width: 184
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 500aaa066554981489e49af1d6849786
+      internalID: 1443889146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_108"
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 2105
+        width: 182
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15997b8eb65d98f4e81a7ab2ab8b5b01
+      internalID: -811380342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_109"
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 2105
+        width: 181
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bf376ec6d0f3904ebe452bd149c1d67
+      internalID: -1820244399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_110"
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 2105
+        width: 182
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a61bdf71e255f1e48b98daf0b09ee7e8
+      internalID: 1792000543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_111"
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 2105
+        width: 182
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ad60a68e40ebf345a451f0d2c3d2821
+      internalID: -1590562557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_112"
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 2105
+        width: 182
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b85353259650bc2478a0b57ca667c125
+      internalID: -1205539585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_113"
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 2105
+        width: 181
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bab2b89e9e064f54e8b6b2d9896573e1
+      internalID: 583159832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_114"
+      rect:
+        serializedVersion: 2
+        x: 1445
+        y: 2105
+        width: 182
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b8fece2dba3d814eae018d48b17fed6
+      internalID: -1788918738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_115"
+      rect:
+        serializedVersion: 2
+        x: 1657
+        y: 2105
+        width: 184
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 028f015138d12424199909f356c53dbb
+      internalID: -553152837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_116"
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 1887
+        width: 182
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fdc0e49dde1ad54e9e90ea4a593ba9c
+      internalID: -325881103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_117"
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 1887
+        width: 181
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a07a87190567c454dbf14291baa232b1
+      internalID: -1008241920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_118"
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 1887
+        width: 182
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c535aa5fbe7f374196fefeafdca0755
+      internalID: -997824546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_119"
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 1887
+        width: 182
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ca20259ab8b3394fa2299cbb91d996d
+      internalID: 919068898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_120"
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 1887
+        width: 182
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6ddc168127e811489f4442a205c7cf5
+      internalID: 488744212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_121"
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 1887
+        width: 181
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9b35d1b308279b4e929cb0d40d435eb
+      internalID: 486947741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_122"
+      rect:
+        serializedVersion: 2
+        x: 1445
+        y: 1887
+        width: 182
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ce18bac101cb34449aea30238b69f7f
+      internalID: -249485790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_123"
+      rect:
+        serializedVersion: 2
+        x: 1657
+        y: 1887
+        width: 184
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ced72f6c131ba54e9b9fd008d68b219
+      internalID: -1014782166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_124"
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 1672
+        width: 182
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c565bfa57ed8b94593b2c52cbe8871d
+      internalID: -684878178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_125"
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 1672
+        width: 181
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 877659b1d789cda47af78ffc7a7cc938
+      internalID: 1040473321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_126"
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 1672
+        width: 182
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d71b4a0d6d619484795816cde17ea8bb
+      internalID: 426507738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_127"
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 1672
+        width: 182
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f2131893d748294fa8b6314c8b7ef7c
+      internalID: -1262627176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_128"
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 1672
+        width: 182
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c55066a2630d6a42aea97694521c068
+      internalID: -1421943066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_129"
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 1672
+        width: 181
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fa44b2e475284b468a4c455b625e6d9
+      internalID: -1850370997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_130"
+      rect:
+        serializedVersion: 2
+        x: 1445
+        y: 1672
+        width: 182
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8993e29148fa87499c465e8cdccf972
+      internalID: 754901883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_131"
+      rect:
+        serializedVersion: 2
+        x: 1657
+        y: 1672
+        width: 184
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed68ab29ff429f9428bf0cdfd47549df
+      internalID: 200888822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_132"
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 1457
+        width: 182
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd86a76be1642d345b652bed137f8134
+      internalID: -734391395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_133"
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 1457
+        width: 181
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5178a4c04d559ff46b55ea30a08f155e
+      internalID: -1550817343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_134"
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 1457
+        width: 182
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce5f945a4d17f484aa19a199a8bdf1da
+      internalID: -1451872080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_135"
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 1457
+        width: 182
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 214d58b5f97e17b4f80a848512732c93
+      internalID: 1367369159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_136"
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 1457
+        width: 182
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8803a285c07dcf841b94011e2b4ee3a3
+      internalID: 127032531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_137"
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 1457
+        width: 181
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a0847c86a53fe04eae9f2e325747780
+      internalID: -1666074571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_138"
+      rect:
+        serializedVersion: 2
+        x: 1445
+        y: 1457
+        width: 182
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e1d7ea9391aa9b4682b42646622796d
+      internalID: -70509426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_139"
+      rect:
+        serializedVersion: 2
+        x: 1657
+        y: 1457
+        width: 184
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb2ce8dc164edaf45bfd6f603dc5dee8
+      internalID: 1811787397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_140"
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 1239
+        width: 182
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05efb83c95fe9e14c99ccb7067a8c735
+      internalID: -1922058397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_141"
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 1239
+        width: 181
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7573cdf06c8cdf4b91a60b9708ef4bc
+      internalID: -1440471300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_142"
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 1239
+        width: 182
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa742303a39d8b0468db5ce67d3c9d45
+      internalID: -1113246480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_143"
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 1239
+        width: 182
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 154edf466da8242409c95b1bbb7c9ff5
+      internalID: 1818368872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_144"
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 1239
+        width: 182
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8962d114d9bf52d4489680ece83a989e
+      internalID: 1958516399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_145"
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 1239
+        width: 181
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a9f073e4be21584b9a6891e78b9fe7b
+      internalID: -545041189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_146"
+      rect:
+        serializedVersion: 2
+        x: 1445
+        y: 1239
+        width: 182
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 618b266cea47ad14bb1db5d84bc6f5e3
+      internalID: 304575483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_147"
+      rect:
+        serializedVersion: 2
+        x: 1657
+        y: 1239
+        width: 184
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bf201d669040ee4bbbb474034bc4589
+      internalID: 738557319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_148"
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 1024
+        width: 182
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 682b944e747322e47ba4daf245ba44d0
+      internalID: 329705358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_149"
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 1024
+        width: 181
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e5a0b32c1b359f4f9b31e19e10c04ad
+      internalID: 428504079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_150"
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 1024
+        width: 182
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0096faece674cb745b37cafc45daae25
+      internalID: 811162643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_151"
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 1024
+        width: 182
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bc9edd65d5b75f408dfa11db8ecb6e0
+      internalID: -45464379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_152"
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 1024
+        width: 182
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6b08d5da3008ab4488c184e82bfc4b3
+      internalID: 468265712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_153"
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 1024
+        width: 181
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7bb363b44d57744c9c47812e6114309
+      internalID: 917875978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_154"
+      rect:
+        serializedVersion: 2
+        x: 1445
+        y: 1024
+        width: 182
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9b5262dce3ff8842b741d65c9017b95
+      internalID: -2065504628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_155"
+      rect:
+        serializedVersion: 2
+        x: 1657
+        y: 1024
+        width: 184
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a5c0245ea92a1648b3cdc2c0508b007
+      internalID: -1006728615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_156"
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 809
+        width: 182
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae0c16c6a88ddaa468a725ed3d2f4f90
+      internalID: 1533079205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_157"
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 809
+        width: 181
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d664d3d494a0e041b43080ee8bba331
+      internalID: -374155417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_158"
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 809
+        width: 182
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ce3b9c1bdda2544cbcc3390e0086640
+      internalID: 840034695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_159"
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 809
+        width: 182
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 249e5aa50dc203743862b791113ec1de
+      internalID: 276275228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_160"
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 809
+        width: 182
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b3d9a9c431de8342a6dd10fc57bd447
+      internalID: 175107905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_161"
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 809
+        width: 181
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa9a7a6578dea4742a5150282b476f4c
+      internalID: -596734452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_162"
+      rect:
+        serializedVersion: 2
+        x: 1445
+        y: 809
+        width: 182
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00aa192d75d3bbd41839b7aee7fb47a4
+      internalID: -1096345316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_163"
+      rect:
+        serializedVersion: 2
+        x: 1657
+        y: 809
+        width: 184
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61a1572b378fc464bb2b4203c0b03ea0
+      internalID: 1552716806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_164"
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 592
+        width: 182
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: deaeac0045b8d2d4a94944c9b441f5ac
+      internalID: -84797940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_165"
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 592
+        width: 181
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b4494c65859f6342b296741b34536e1
+      internalID: 51885593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_166"
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 592
+        width: 182
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a31554b6a352d2248a06138a5e5adc81
+      internalID: -2075702683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_167"
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 592
+        width: 182
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7676741e049ad5d468e5beb14db7f3a1
+      internalID: -615234767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_168"
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 592
+        width: 182
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 546fcee5419caf348ba817a859a1e9f1
+      internalID: 949361408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_169"
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 592
+        width: 181
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b97cea7fb4e17a24190ca86f3455a4e6
+      internalID: -599768494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_170"
+      rect:
+        serializedVersion: 2
+        x: 1445
+        y: 592
+        width: 182
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30a1d448d2af778499f2c1e943427f37
+      internalID: -1192219285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_171"
+      rect:
+        serializedVersion: 2
+        x: 1657
+        y: 592
+        width: 184
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d8729fd0e2bb0f49b58983af8fbc99c
+      internalID: 331133232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_172"
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 376
+        width: 182
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c300ce452cec1cc45999e5cc752ceea2
+      internalID: 1012793680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_173"
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 376
+        width: 181
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44cb5a8e41d54dd43bbd8bf1bc712d3f
+      internalID: -47444868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_174"
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 376
+        width: 182
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5a0c31668b345b468fe9807efa76f1b
+      internalID: -371807595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_175"
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 376
+        width: 182
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57ee6826337144a4b8c5ee81583e0717
+      internalID: -1534961256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_176"
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 376
+        width: 182
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4af2fecf8d7687e488acaff5abe7f3a7
+      internalID: -1186951106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_177"
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 376
+        width: 181
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6cb643049d43f54e9a833c5141732fc
+      internalID: 244044063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_178"
+      rect:
+        serializedVersion: 2
+        x: 1445
+        y: 376
+        width: 182
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 798946b5a01dcb646961a604fda65c61
+      internalID: 183658272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_179"
+      rect:
+        serializedVersion: 2
+        x: 1657
+        y: 376
+        width: 184
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 308774d4ee41e2c4996c4b35808e00de
+      internalID: -1146817100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "bot\xF5es UI_180"
+      rect:
+        serializedVersion: 2
+        x: 1657
+        y: 159
+        width: 184
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c1602d57529fe249b0f739a4e917b9d
+      internalID: 1783359371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      "bot\xF5es UI_148": 329705358
+      "bot\xF5es UI_107": 1443889146
+      "bot\xF5es UI_36": -216401782
+      "bot\xF5es UI_94": -253318317
+      "bot\xF5es UI_13": 31067559
+      "bot\xF5es UI_88": 2028202623
+      "bot\xF5es UI_82": -335147065
+      "bot\xF5es UI_118": -997824546
+      "bot\xF5es UI_174": -371807595
+      "bot\xF5es UI_19": -1280619399
+      "bot\xF5es UI_172": 1012793680
+      "bot\xF5es UI_92": 1916356528
+      "bot\xF5es UI_87": 1606607007
+      "bot\xF5es UI_122": -249485790
+      "bot\xF5es UI_85": -844969378
+      "bot\xF5es UI_108": -811380342
+      "bot\xF5es UI_179": -1146817100
+      "bot\xF5es UI_78": -905674968
+      "bot\xF5es UI_57": -831783293
+      "bot\xF5es UI_149": 428504079
+      "bot\xF5es UI_47": 1113938045
+      "bot\xF5es UI_162": -1096345316
+      "bot\xF5es UI_115": -553152837
+      "bot\xF5es UI_22": 1109789752
+      "bot\xF5es UI_154": -2065504628
+      "bot\xF5es UI_31": -360161279
+      "bot\xF5es UI_65": -543583474
+      "bot\xF5es UI_158": 840034695
+      "bot\xF5es UI_136": 127032531
+      "bot\xF5es UI_86": -630897881
+      "bot\xF5es UI_131": 200888822
+      "bot\xF5es UI_112": -1205539585
+      "bot\xF5es UI_96": 1047721431
+      "bot\xF5es UI_135": 1367369159
+      "bot\xF5es UI_69": -687201687
+      "bot\xF5es UI_48": -1610450800
+      "bot\xF5es UI_5": 1913721400
+      "bot\xF5es UI_145": -545041189
+      "bot\xF5es UI_61": -1933078534
+      "bot\xF5es UI_55": 458344968
+      "bot\xF5es UI_111": -1590562557
+      "bot\xF5es UI_77": -1929196984
+      "bot\xF5es UI_51": 955156769
+      "bot\xF5es UI_45": -611993533
+      "bot\xF5es UI_116": -325881103
+      "bot\xF5es UI_44": -303635636
+      "bot\xF5es UI_3": -1895391341
+      "bot\xF5es UI_30": 1501105127
+      "bot\xF5es UI_37": -355586056
+      "bot\xF5es UI_167": -615234767
+      "bot\xF5es UI_114": -1788918738
+      "bot\xF5es UI_52": 1978784448
+      "bot\xF5es UI_147": 738557319
+      "bot\xF5es UI_163": 1552716806
+      "bot\xF5es UI_178": 183658272
+      "bot\xF5es UI_18": 2087592785
+      "bot\xF5es UI_33": 690969768
+      "bot\xF5es UI_170": -1192219285
+      "bot\xF5es UI_74": 1027458814
+      "bot\xF5es UI_32": 1587457069
+      "bot\xF5es UI_101": -1324581370
+      "bot\xF5es UI_134": -1451872080
+      "bot\xF5es UI_24": -1610234309
+      "bot\xF5es UI_7": -621041692
+      "bot\xF5es UI_20": -915845617
+      "bot\xF5es UI_79": -115087066
+      "bot\xF5es UI_144": 1958516399
+      "bot\xF5es UI_159": 276275228
+      "bot\xF5es UI_99": -107505777
+      "bot\xF5es UI_15": 1221417264
+      "bot\xF5es UI_17": -1201724529
+      "bot\xF5es UI_141": -1440471300
+      "bot\xF5es UI_83": 342785282
+      "bot\xF5es UI_41": 407201226
+      "bot\xF5es UI_100": 174889603
+      "bot\xF5es UI_123": -1014782166
+      "bot\xF5es UI_42": 2124456808
+      "bot\xF5es UI_146": 304575483
+      "bot\xF5es UI_26": 971488334
+      "bot\xF5es UI_64": 1922523294
+      "bot\xF5es UI_89": -1804349336
+      "bot\xF5es UI_113": 583159832
+      "bot\xF5es UI_29": 473914787
+      "bot\xF5es UI_10": 1659624917
+      "bot\xF5es UI_53": 264966004
+      "bot\xF5es UI_120": 488744212
+      "bot\xF5es UI_91": 712766403
+      "bot\xF5es UI_129": -1850370997
+      "bot\xF5es UI_155": -1006728615
+      "bot\xF5es UI_173": -47444868
+      "bot\xF5es UI_25": 2125303516
+      "bot\xF5es UI_102": -1575838611
+      "bot\xF5es UI_127": -1262627176
+      "bot\xF5es UI_98": -149061414
+      "bot\xF5es UI_142": -1113246480
+      "bot\xF5es UI_177": 244044063
+      "bot\xF5es UI_97": -897348945
+      "bot\xF5es UI_153": 917875978
+      "bot\xF5es UI_38": 1106660292
+      "bot\xF5es UI_43": 376978115
+      "bot\xF5es UI_133": -1550817343
+      "bot\xF5es UI_23": -754033780
+      "bot\xF5es UI_63": -1703493999
+      "bot\xF5es UI_49": -290006561
+      "bot\xF5es UI_56": -836092842
+      "bot\xF5es UI_128": -1421943066
+      "bot\xF5es UI_95": -885568115
+      "bot\xF5es UI_106": -1324949850
+      "bot\xF5es UI_176": -1186951106
+      "bot\xF5es UI_105": -1903534207
+      "bot\xF5es UI_75": 417520814
+      "bot\xF5es UI_28": 472198413
+      "bot\xF5es UI_14": -1777137866
+      "bot\xF5es UI_72": -1611884438
+      "bot\xF5es UI_84": 34657212
+      "bot\xF5es UI_4": 2035476971
+      "bot\xF5es UI_90": 289212801
+      "bot\xF5es UI_119": 919068898
+      "bot\xF5es UI_58": -1358685489
+      "bot\xF5es UI_143": 1818368872
+      "bot\xF5es UI_35": 1242426756
+      "bot\xF5es UI_166": -2075702683
+      "bot\xF5es UI_125": 1040473321
+      "bot\xF5es UI_6": -916177982
+      "bot\xF5es UI_46": -261751888
+      "bot\xF5es UI_2": -461524960
+      "bot\xF5es UI_150": 811162643
+      "bot\xF5es UI_11": 747465226
+      "bot\xF5es UI_68": 487394297
+      "bot\xF5es UI_117": -1008241920
+      "bot\xF5es UI_80": 169921462
+      "bot\xF5es UI_67": 1532031160
+      "bot\xF5es UI_54": -1258068441
+      "bot\xF5es UI_16": -1155902507
+      "bot\xF5es UI_0": 66242104
+      "bot\xF5es UI_160": 175107905
+      "bot\xF5es UI_126": 426507738
+      "bot\xF5es UI_76": 1724236643
+      "bot\xF5es UI_59": -819182960
+      "bot\xF5es UI_34": -1761441202
+      "bot\xF5es UI_110": 1792000543
+      "bot\xF5es UI_39": -995465656
+      "bot\xF5es UI_121": 486947741
+      "bot\xF5es UI_165": 51885593
+      "bot\xF5es UI_73": -405963174
+      "bot\xF5es UI_169": -599768494
+      "bot\xF5es UI_62": 1295813888
+      "bot\xF5es UI_180": 1783359371
+      "bot\xF5es UI_175": -1534961256
+      "bot\xF5es UI_9": -1628152354
+      "bot\xF5es UI_161": -596734452
+      "bot\xF5es UI_103": -702685757
+      "bot\xF5es UI_164": -84797940
+      "bot\xF5es UI_171": 331133232
+      "bot\xF5es UI_138": -70509426
+      "bot\xF5es UI_27": 1110062096
+      "bot\xF5es UI_66": 959207399
+      "bot\xF5es UI_152": 468265712
+      "bot\xF5es UI_168": 949361408
+      "bot\xF5es UI_140": -1922058397
+      "bot\xF5es UI_8": -1186744969
+      "bot\xF5es UI_156": 1533079205
+      "bot\xF5es UI_70": 1159880494
+      "bot\xF5es UI_21": 1256079931
+      "bot\xF5es UI_109": -1820244399
+      "bot\xF5es UI_50": -729535815
+      "bot\xF5es UI_124": -684878178
+      "bot\xF5es UI_104": 1616744642
+      "bot\xF5es UI_1": -320657580
+      "bot\xF5es UI_81": -1600496632
+      "bot\xF5es UI_132": -734391395
+      "bot\xF5es UI_71": -1827350141
+      "bot\xF5es UI_40": -1871821533
+      "bot\xF5es UI_60": -89238289
+      "bot\xF5es UI_157": -374155417
+      "bot\xF5es UI_151": -45464379
+      "bot\xF5es UI_93": -1425209263
+      "bot\xF5es UI_139": 1811787397
+      "bot\xF5es UI_130": 754901883
+      "bot\xF5es UI_137": -1666074571
+      "bot\xF5es UI_12": 388593946
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
