@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -22,15 +23,20 @@ public class lerNivel : MonoBehaviour {
     }
 
     public void incrementarNivelFonte() {
-        int novoEstadoFonte = int.Parse(inputField.text) + 1;
-        inputField.text = novoEstadoFonte.ToString();
+        int estadoAtual = int.Parse(inputField.text);
+        int novoEstadoFonte = estadoAtual + 1;
+        AtualizarTextoFonte(estadoAtual, novoEstadoFonte);
     }
 
     public void decrementarNivelFonte() {
-        int novoEstadoFonte = int.Parse(inputField.text) - 1;
-        inputField.text = novoEstadoFonte.ToString();
+        int estadoAtual = int.Parse(inputField.text);
+        int novoEstadoFonte = estadoAtual - 1;
+        AtualizarTextoFonte(estadoAtual, novoEstadoFonte);
     }
 
+    private void AtualizarTextoFonte(int estadoAtual, int novoEstadoFonte) {
+        inputField.text = (novoEstadoFonte <= 2 && novoEstadoFonte >= 0) ? novoEstadoFonte.ToString() : estadoAtual.ToString();
+    }
 
     public void RegularFonte() {
 
@@ -38,18 +44,7 @@ public class lerNivel : MonoBehaviour {
 
         // desligado = 0, ligado = 1, cheio = 2
         int estado = int.Parse(inputField.text);
-        if (estado == 0) {
-            spriteRenderer.sprite = spritesFonte[0];
-        }
-        else if (estado == 1) {
-            spriteRenderer.sprite = spritesFonte[1];
-        }
-        else if (estado == 2) {
-            spriteRenderer.sprite = spritesFonte[2];
-        }
-        else {
-            Debug.Log("VALOR INVÁLIDO!");
-        }
+        spriteRenderer.sprite = spritesFonte[estado];
 
     }
 

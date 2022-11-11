@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class exibirBotao : MonoBehaviour
+public class ExibirBotao : MonoBehaviour
 {
     // Start is called before the first frame update
     [Header("Configuração do botão")]
@@ -37,13 +37,13 @@ public class exibirBotao : MonoBehaviour
         ResetarBotao();
         Debug.Log("Personagem: " + player);
         gameObjectBotao = botao.gameObject;
-        if (collision.gameObject.tag == "Player") {
+        if (collision.gameObject.CompareTag("Player")) {
             gameObjectBotao.SetActive(true);
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision) {
-        if (collision.gameObject.tag == "Player") {
+        if (collision.gameObject.CompareTag("Player")) {
             gameObjectBotao.SetActive(false);
         }
     }
