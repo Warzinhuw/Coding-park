@@ -1,11 +1,28 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Threading;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using static System.Net.Mime.MediaTypeNames;
+using Image = UnityEngine.UI.Image;
+
+public class Execucao {
+    public int Cor { get; }
+    public int Nivel { get; }
+    public double Tempo { get; }
+
+    public GameObject Prefab { get; set; }
+    public TextMeshProUGUI TextNivel { get; set; }
+    public TextMeshProUGUI TextTempo { get; set; }
+    public Image Image { get; set; }
+
+    public Execucao(int cor, int nivel, double tempo) {
+        this.Cor = cor;
+        this.Nivel = nivel;
+        this.Tempo = tempo;
+    }
+}
 
 public class LerNivelColorido : MonoBehaviour {
     [Header("Fonte de água")]
@@ -21,11 +38,21 @@ public class LerNivelColorido : MonoBehaviour {
     public Button botaoColorido;
     public Color[] coresBotao;
 
+    [Header("Botao do Nível")]
+    public TextMeshProUGUI nivelInputField;
+
+    [Header("Painel de controle")]
+    public GameObject painelReferencia;
+    public GameObject prefabExecucao;
+    private readonly Color32 fundoInicialPrefab = new(255, 223, 223, 255);
+    private readonly Color32 fundoFinalPrefab = new(0, 251, 59, 255);
+    public TMP_InputField inputFieldQtdRepeticoes;
+
     private Sprite[,] sprites;
-
-
     private int indiceCor;
     private float startTimer;
+    private List<Execucao> execucoes = new List<Execucao>();
+    private int qtdRepeticoes = 1;
 
 
     // Start is called before the first frame update
@@ -46,6 +73,68 @@ public class LerNivelColorido : MonoBehaviour {
                 sprites[i, n] = spritesFonte[index++];
             }
         }
+    }
+
+    public void AdicionarExecucao() {
+        if (execucoes.Count < 3) {
+            Execucao novaExecucao = new Execucao(indiceCor, int.Parse(inputField.text), double.Parse(tempoInputField.text.Split("s")[0]));
+            GameObject prefab = Instantiate(prefabExecucao, painelReferencia.transform.position - Vector3.up * 0.4f * (execucoes.Count + 1), Quaternion.identity, painelReferencia.transform.parent.transform);
+            prefab.transform.GetChild(0).GetComponent<Image>().color = coresBotao[novaExecucao.Cor];
+            prefab.transform.GetChild(1).GetChild(0).GetComponent<TextMeshProUGUI>().text = novaExecucao.Nivel.ToString();
+            prefab.transform.GetChild(2).GetChild(0).GetComponent<TextMeshProUGUI>().text = novaExecucao.Tempo.ToString() + "s";
+            novaExecucao.Prefab = prefab;
+            novaExecucao.Image = prefab.transform.GetChild(0).GetComponent<Image>();
+            novaExecucao.TextNivel = prefab.transform.GetChild(1).GetChild(0).GetComponent<TextMeshProUGUI>();
+            novaExecucao.TextTempo = prefab.transform.GetChild(2).GetChild(0).GetComponent<TextMeshProUGUI>();
+            execucoes.Add(novaExecucao);
+            painelReferencia.GetComponentInChildren<TextMeshProUGUI>().text = "Instruções (" + execucoes.Count.ToString() + "/3)";
+            Debug.Log("execucoesNivel: " + int.Parse(inputField.text) + " execucoesCor: " + indiceCor);
+        }
+        ResetarFonte();
+    }
+
+    private void ResetarFonte() {
+        tempoInputField.text = "0";
+        inputField.text = "0";
+        indiceCor = 0;
+        SpriteRenderer spriteRenderer = fonte.GetComponent<SpriteRenderer>();
+        // desligado = 0, ligado = 1, cheio = 2
+        spriteRenderer.sprite = sprites[0, 0];
+        botaoColorido.image.color = coresBotao[0];
+    }
+
+    public void ExecutarScript() {
+        startTimer = 0f;
+        for (int n = 0; n < qtdRepeticoes; qtdRepeticoes++) {
+            for (int i = 0; i <= execucoes.Count - 1; i++) {
+                double parsedTimer = execucoes[i].Tempo;
+                int index = i;
+                this.Invoke(() => SetPrefabBackground(index, fundoFinalPrefab), startTimer);
+                this.Invoke(() => SetNivelText(index), startTimer);
+                while (parsedTimer > 0) {
+                    string timerString = parsedTimer.ToString();
+                    this.Invoke(() => SetTimerText(timerString, index), startTimer);
+                    this.Invoke(() => RegularFonteScript(index), startTimer);
+                    parsedTimer -= 1f;
+                    startTimer += 1f;
+                }
+                this.Invoke(() => SetPrefabBackground(index, fundoInicialPrefab), startTimer);
+                this.Invoke(() => SetTimerText("0", index), startTimer);
+            }
+            inputFieldQtdRepeticoes.text = (--qtdRepeticoes).ToString();
+        }
+        this.Invoke(() => ResetarFonte(), startTimer);
+        this.Invoke(() => {
+            for (int i = 0; i < execucoes.Count; i++) {
+                Destroy(execucoes[i].Prefab);
+            }
+        }, startTimer);
+        this.Invoke(() => execucoes.Clear(), startTimer);
+        this.Invoke(() => painelReferencia.GetComponentInChildren<TextMeshProUGUI>().text = "Instruções (0/3)", startTimer);
+    }
+
+    private void SetPrefabBackground(int index, Color32 cor) {
+        execucoes[index].Prefab.GetComponent<Image>().color = cor;
     }
 
     public void incrementarCor() {
@@ -82,35 +171,30 @@ public class LerNivelColorido : MonoBehaviour {
     }
 
     public void IncrementarTempo() {
-        tempoInputField.text = (double.Parse(tempoInputField.text) + 0.5).ToString();
+        tempoInputField.text = (double.Parse(tempoInputField.text.Split("s")[0]) + 1).ToString() + "s";
     }
 
     public void DecrementarTempo() {
-        double novoTempo = double.Parse(tempoInputField.text) - 0.5;
+        double novoTempo = double.Parse(tempoInputField.text.Split("s")[0]) - 1;
         if (novoTempo < 0) {
             return;
         }
-        tempoInputField.text = novoTempo.ToString();
+        tempoInputField.text = novoTempo.ToString() + "s";
     }
 
-    private void SetTimerText(string text) {
-        tempoInputField.text = text;
+    public void SetQtdRepeticoes() {
+        qtdRepeticoes = int.Parse(inputFieldQtdRepeticoes.text);
     }
 
-    public void ExecutarScript() {
-        float parsedTimer = float.Parse(tempoInputField.text);
-        startTimer = 0f;
-        while (parsedTimer >= 0) {
-            string timerString = parsedTimer.ToString();
-            this.Invoke(() => SetTimerText(timerString), startTimer);
-            parsedTimer -= 0.5f;
-            Invoke(nameof(incrementarCor), startTimer);
-            startTimer += 0.5f;
-        }
+    private void SetTimerText(string text, int index) {
+        execucoes[index].TextTempo.text = text + "s";
     }
 
+    private void SetNivelText(int index) {
+        execucoes[index].TextNivel.text = execucoes[index].Nivel.ToString();
+    }
 
-    public void RegularFonte() {
+    private void RegularFonte() {
 
         SpriteRenderer spriteRenderer = fonte.GetComponent<SpriteRenderer>();
 
@@ -119,6 +203,12 @@ public class LerNivelColorido : MonoBehaviour {
         spriteRenderer.sprite = sprites[indiceCor, estado];
         botaoColorido.image.color = coresBotao[indiceCor];
 
+    }
+
+    private void RegularFonteScript(int indice) {
+        SpriteRenderer spriteRenderer = fonte.GetComponent<SpriteRenderer>();
+        // desligado = 0, ligado = 1, cheio = 2
+        spriteRenderer.sprite = sprites[execucoes[indice].Cor, execucoes[indice].Nivel];
     }
 
 }

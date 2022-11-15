@@ -17,6 +17,7 @@ public class ExibirBotao : MonoBehaviour
 
     [Header("Tela do comutador para abrir")]
     public GameObject tela;
+    public GameObject telaTutorial;
 
     private int estadoBotao = 0;
 
@@ -52,11 +53,13 @@ public class ExibirBotao : MonoBehaviour
         // Congela rotação do personagem
         player.GetComponent<Rigidbody2D>().isKinematic = true;
         tela.SetActive(true);
+        telaTutorial.SetActive(true);
         ResetarBotao();
     }
 
     void FecharTela() {
         tela.SetActive(false);
+        telaTutorial.SetActive(false);
         player.GetComponent<Rigidbody2D>().isKinematic = false;
         ResetarBotao();
     }
