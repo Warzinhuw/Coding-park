@@ -52,6 +52,7 @@ public class ExibirBotao : MonoBehaviour
     void ExibirTelaComputador() {
         // Congela rotação do personagem
         player.GetComponent<Rigidbody2D>().isKinematic = true;
+        player.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         tela.SetActive(true);
         telaTutorial.SetActive(true);
         ResetarBotao();

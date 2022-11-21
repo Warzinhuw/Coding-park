@@ -1,12 +1,14 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using System.Reflection;
+using System.Text.RegularExpressions;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using static System.Net.Mime.MediaTypeNames;
 using Image = UnityEngine.UI.Image;
-
 public class Execucao {
     public int Cor { get; }
     public int Nivel { get; }
@@ -47,16 +49,36 @@ public class LerNivelColorido : MonoBehaviour {
     private readonly Color32 fundoInicialPrefab = new(255, 223, 223, 255);
     private readonly Color32 fundoFinalPrefab = new(0, 251, 59, 255);
     public TMP_InputField inputFieldQtdRepeticoes;
+    public TMP_InputField textoExibirQtdRepeticoes;
+    public RectTransform painelTutorial;
+
+    [Header("Botoões para desabilitar")]
+    public GameObject botoesParaDesabilitar;
+
+    [Header("Configurações do console")]
+    public TMP_InputField inputFieldFuncao1;
+    public TMP_InputField inputFieldFuncao2;
+    public TMP_InputField inputQtdRepeticoesPeloConsole;
+    public GameObject telaConsoleParaDesabilitar;
+    public List<GameObject> highLightsToTrigger = new();
 
     private Sprite[,] sprites;
     private int indiceCor;
     private float startTimer;
-    private List<Execucao> execucoes = new List<Execucao>();
+    private List<Execucao> execucoes = new();
     private int qtdRepeticoes = 1;
+
+    private Regex regexFuncao = new Regex("^executarInstrucao\\([1-5]\\s*,\\s*[0-2]+,\\s*[0-2]+\\);$");
+    private Color32 fundoMatchRegex = new(83, 255, 113, 255);
+    private Color32 fundoNotMatchRegex = new(255, 72, 37, 255);
+    private Color32 fundoBranco = new(255, 255, 255, 255);
+    private Execucao execucaoDoInput1;
+    private Execucao execucaoDoInput2;
 
 
     // Start is called before the first frame update
     void Start() {
+
     }
 
     // Update is called once per frame
@@ -75,10 +97,21 @@ public class LerNivelColorido : MonoBehaviour {
         }
     }
 
-    public void AdicionarExecucao() {
+    public void AdicionarECriarExecucao() {
+        Execucao novaExecucao = MontarNovaExecucao(null);
+        MontarExecucoes(novaExecucao);
+    }
+
+    public void AdicionarECriarExecucaoComTarget(TMP_InputField targetInputField) {
+        Execucao novaExecucao = MontarNovaExecucao(targetInputField);
+        MontarExecucoes(novaExecucao);
+    }
+
+    public void MontarExecucoes(Execucao novaExecucao) {
         if (execucoes.Count < 3) {
-            Execucao novaExecucao = new Execucao(indiceCor, int.Parse(inputField.text), double.Parse(tempoInputField.text.Split("s")[0]));
-            GameObject prefab = Instantiate(prefabExecucao, painelReferencia.transform.position - Vector3.up * 0.4f * (execucoes.Count + 1), Quaternion.identity, painelReferencia.transform.parent.transform);
+            if (novaExecucao == null)
+                return;
+            GameObject prefab = Instantiate(prefabExecucao, painelReferencia.transform.position - Vector3.up * 0.85f * (execucoes.Count + 1), Quaternion.identity, painelReferencia.transform.parent.transform);
             prefab.transform.GetChild(0).GetComponent<Image>().color = coresBotao[novaExecucao.Cor];
             prefab.transform.GetChild(1).GetChild(0).GetComponent<TextMeshProUGUI>().text = novaExecucao.Nivel.ToString();
             prefab.transform.GetChild(2).GetChild(0).GetComponent<TextMeshProUGUI>().text = novaExecucao.Tempo.ToString() + "s";
@@ -88,9 +121,42 @@ public class LerNivelColorido : MonoBehaviour {
             novaExecucao.TextTempo = prefab.transform.GetChild(2).GetChild(0).GetComponent<TextMeshProUGUI>();
             execucoes.Add(novaExecucao);
             painelReferencia.GetComponentInChildren<TextMeshProUGUI>().text = "Instruções (" + execucoes.Count.ToString() + "/3)";
-            Debug.Log("execucoesNivel: " + int.Parse(inputField.text) + " execucoesCor: " + indiceCor);
         }
         ResetarFonte();
+    }
+
+
+    private Execucao MontarNovaExecucao(TMP_InputField targetInputField) {
+        if(targetInputField == null) {
+            return new Execucao(indiceCor, int.Parse(inputField.text), double.Parse(tempoInputField.text.Split("s")[0]));
+        } else {
+            if (regexFuncao.IsMatch(targetInputField.text)) {
+                string[] valores = targetInputField.text.Split(",");
+                targetInputField.image.color = Color32.Lerp(fundoBranco, fundoMatchRegex, 1f);
+                this.Invoke(() => targetInputField.image.color = Color32.Lerp(fundoMatchRegex, fundoBranco, 1f), 1);
+                Execucao novaExecucao = new Execucao(int.Parse(valores[2].Split(")")[0]), int.Parse(valores[1]), int.Parse(valores[0].Split("(")[1]));
+                int indice;
+                if (targetInputField.name.Contains("1")) {
+                    indice = 1;
+                }
+                else {
+                    indice = 2;
+                }
+                if (indice == 1 && execucaoDoInput1 != null || indice == 2 && execucaoDoInput2 != null) {
+                    Execucao execucao = execucoes.ElementAt(indice);
+                    if (execucao != null) {
+                        this.Invoke(() => targetInputField.image.color = Color32.Lerp(fundoNotMatchRegex, fundoBranco, 1f), 1);
+                        return null;
+                    }
+                }
+                return novaExecucao;
+            } else {
+                targetInputField.image.color = Color32.Lerp(fundoBranco, fundoNotMatchRegex, 1f);
+                this.Invoke(() => targetInputField.image.color = Color32.Lerp(fundoNotMatchRegex, fundoBranco, 1f), 1);
+                Debug.Log("Regex didn't match for following text: " + targetInputField.text);
+                return null;
+            }
+        }
     }
 
     private void ResetarFonte() {
@@ -101,16 +167,22 @@ public class LerNivelColorido : MonoBehaviour {
         // desligado = 0, ligado = 1, cheio = 2
         spriteRenderer.sprite = sprites[0, 0];
         botaoColorido.image.color = coresBotao[0];
+        botoesParaDesabilitar.SetActive(true);
     }
 
     public void ExecutarScript() {
         startTimer = 0f;
-        for (int n = 0; n < qtdRepeticoes; qtdRepeticoes++) {
-            for (int i = 0; i <= execucoes.Count - 1; i++) {
+        int loopCounter = 0;
+        textoExibirQtdRepeticoes.text = "Contador: " + qtdRepeticoes;
+        while (qtdRepeticoes > loopCounter) {
+            for (int i = 0; i < execucoes.Count; i++) {
                 double parsedTimer = execucoes[i].Tempo;
                 int index = i;
                 this.Invoke(() => SetPrefabBackground(index, fundoFinalPrefab), startTimer);
                 this.Invoke(() => SetNivelText(index), startTimer);
+                if(telaConsoleParaDesabilitar.activeSelf) {
+                    this.Invoke(() => highLightsToTrigger[index].SetActive(true), startTimer);
+                }
                 while (parsedTimer > 0) {
                     string timerString = parsedTimer.ToString();
                     this.Invoke(() => SetTimerText(timerString, index), startTimer);
@@ -120,17 +192,69 @@ public class LerNivelColorido : MonoBehaviour {
                 }
                 this.Invoke(() => SetPrefabBackground(index, fundoInicialPrefab), startTimer);
                 this.Invoke(() => SetTimerText("0", index), startTimer);
+                this.Invoke(() => highLightsToTrigger[index].SetActive(false), startTimer);
             }
-            inputFieldQtdRepeticoes.text = (--qtdRepeticoes).ToString();
+            loopCounter++;
+            string repeticoes = (qtdRepeticoes - loopCounter).ToString();
+            this.Invoke(() => {
+                textoExibirQtdRepeticoes.text = "Contador: " + repeticoes;
+                ResetControlPanel();
+            }, startTimer);
+            
         }
-        this.Invoke(() => ResetarFonte(), startTimer);
+
         this.Invoke(() => {
             for (int i = 0; i < execucoes.Count; i++) {
                 Destroy(execucoes[i].Prefab);
             }
         }, startTimer);
-        this.Invoke(() => execucoes.Clear(), startTimer);
+        this.Invoke(() => ResetarFonte(), startTimer);
+        this.Invoke(() => textoExibirQtdRepeticoes.text = "", startTimer);
+        this.Invoke(() => inputFieldQtdRepeticoes.text = "", startTimer);
         this.Invoke(() => painelReferencia.GetComponentInChildren<TextMeshProUGUI>().text = "Instruções (0/3)", startTimer);
+        this.Invoke(() => execucoes.Clear(), startTimer);
+    }
+
+    // Parte console
+
+    public void ClearExecucoes() {
+        execucoes.Clear();
+        Execucao novaExecucao = new Execucao(0, 1, 3);
+        GameObject prefab = Instantiate(prefabExecucao, painelReferencia.transform.position - Vector3.up * 0.85f * (execucoes.Count + 1), Quaternion.identity, painelReferencia.transform.parent.transform);
+        prefab.transform.GetChild(0).GetComponent<Image>().color = coresBotao[novaExecucao.Cor];
+        prefab.transform.GetChild(1).GetChild(0).GetComponent<TextMeshProUGUI>().text = novaExecucao.Nivel.ToString();
+        prefab.transform.GetChild(2).GetChild(0).GetComponent<TextMeshProUGUI>().text = novaExecucao.Tempo.ToString() + "s";
+        novaExecucao.Prefab = prefab;
+        novaExecucao.Image = prefab.transform.GetChild(0).GetComponent<Image>();
+        novaExecucao.TextNivel = prefab.transform.GetChild(1).GetChild(0).GetComponent<TextMeshProUGUI>();
+        novaExecucao.TextTempo = prefab.transform.GetChild(2).GetChild(0).GetComponent<TextMeshProUGUI>();
+        execucoes.Insert(0, novaExecucao);
+        painelReferencia.GetComponentInChildren<TextMeshProUGUI>().text = "Instruções (" + execucoes.Count.ToString() + "/3)";
+        inputFieldFuncao1.text = "";
+        inputFieldFuncao2.text = "";
+        qtdRepeticoes = 0;
+        inputQtdRepeticoesPeloConsole.text = "";
+    }
+
+    public void ExecutarPeloConsole() {
+        if (execucoes.Count != 3) {
+            if (!regexFuncao.IsMatch(inputFieldFuncao1.text)) {
+                inputFieldFuncao1.image.color = Color32.Lerp(fundoBranco, fundoNotMatchRegex, 1f);
+            } else {
+                inputFieldFuncao2.image.color = Color32.Lerp(fundoBranco, fundoNotMatchRegex, 1f);
+            }
+            return;
+        }
+        ExecutarScript();
+        this.Invoke(() => ClearExecucoes(), startTimer);
+        this.Invoke(() => telaConsoleParaDesabilitar.SetActive(true), startTimer);
+    }
+
+    private void ResetControlPanel() {
+        for (int i = 0; i < execucoes.Count; i++) {
+            execucoes[i].TextTempo.text = execucoes[i].Tempo.ToString() + "s";
+            execucoes[i].TextNivel.text = execucoes[i].Nivel.ToString();
+        }
     }
 
     private void SetPrefabBackground(int index, Color32 cor) {
@@ -186,6 +310,10 @@ public class LerNivelColorido : MonoBehaviour {
         qtdRepeticoes = int.Parse(inputFieldQtdRepeticoes.text);
     }
 
+    public void SetQtdRepeticoes1PeloConsole() {
+        qtdRepeticoes = int.Parse(inputQtdRepeticoesPeloConsole.text);
+    }
+
     private void SetTimerText(string text, int index) {
         execucoes[index].TextTempo.text = text + "s";
     }
@@ -209,6 +337,14 @@ public class LerNivelColorido : MonoBehaviour {
         SpriteRenderer spriteRenderer = fonte.GetComponent<SpriteRenderer>();
         // desligado = 0, ligado = 1, cheio = 2
         spriteRenderer.sprite = sprites[execucoes[indice].Cor, execucoes[indice].Nivel];
+    }
+
+    public void SetAsFirstSibling() {
+        painelTutorial.SetAsFirstSibling();
+    }
+
+    public void SetAsLastSibling() {
+        painelTutorial.SetAsLastSibling();
     }
 
 }
