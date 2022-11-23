@@ -62,6 +62,12 @@ public class LerNivelColorido : MonoBehaviour {
     public GameObject telaConsoleParaDesabilitar;
     public List<GameObject> highLightsToTrigger = new();
 
+    [Header("Camera")]
+    public Camera cameraToZoomIn;
+    public GameObject canvasWithZoomedCam; 
+    public GameObject painelControleExecs;
+    public GameObject mainUI;
+
     private Sprite[,] sprites;
     private int indiceCor;
     private float startTimer;
@@ -111,7 +117,7 @@ public class LerNivelColorido : MonoBehaviour {
         if (execucoes.Count < 3) {
             if (novaExecucao == null)
                 return;
-            GameObject prefab = Instantiate(prefabExecucao, painelReferencia.transform.position - Vector3.up * 0.85f * (execucoes.Count + 1), Quaternion.identity, painelReferencia.transform.parent.transform);
+            GameObject prefab = Instantiate(prefabExecucao, painelReferencia.transform.position - Vector3.up * 0.66f * (execucoes.Count + 1), Quaternion.identity, painelReferencia.transform.parent.transform);
             prefab.transform.GetChild(0).GetComponent<Image>().color = coresBotao[novaExecucao.Cor];
             prefab.transform.GetChild(1).GetChild(0).GetComponent<TextMeshProUGUI>().text = novaExecucao.Nivel.ToString();
             prefab.transform.GetChild(2).GetChild(0).GetComponent<TextMeshProUGUI>().text = novaExecucao.Tempo.ToString() + "s";
@@ -160,7 +166,7 @@ public class LerNivelColorido : MonoBehaviour {
     }
 
     private void ResetarFonte() {
-        tempoInputField.text = "0";
+        tempoInputField.text = "1s";
         inputField.text = "0";
         indiceCor = 0;
         SpriteRenderer spriteRenderer = fonte.GetComponent<SpriteRenderer>();
@@ -169,11 +175,22 @@ public class LerNivelColorido : MonoBehaviour {
         botaoColorido.image.color = coresBotao[0];
         botoesParaDesabilitar.SetActive(true);
     }
+    
+    private void ResetPainelControleTamanho() {
+        painelControleExecs.GetComponent<RectTransform>().offsetMax = new Vector2(-15, -40);
+        painelControleExecs.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, 437.56f);
+        painelControleExecs.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, 338.61f);
+    }
 
     public void ExecutarScript() {
-        startTimer = 0f;
+        startTimer = 0.5f;
         int loopCounter = 0;
         textoExibirQtdRepeticoes.text = "Contador: " + qtdRepeticoes;
+        Camera mainCam = Camera.main;
+        cameraToZoomIn.enabled = true;
+        mainCam.enabled = false;
+        painelControleExecs.transform.SetParent(canvasWithZoomedCam.transform);
+        ResetPainelControleTamanho();        
         while (qtdRepeticoes > loopCounter) {
             for (int i = 0; i < execucoes.Count; i++) {
                 double parsedTimer = execucoes[i].Tempo;
@@ -183,15 +200,19 @@ public class LerNivelColorido : MonoBehaviour {
                 if(telaConsoleParaDesabilitar.activeSelf) {
                     this.Invoke(() => highLightsToTrigger[index].SetActive(true), startTimer);
                 }
-                while (parsedTimer > 0) {
+                while (parsedTimer >= 0) {
                     string timerString = parsedTimer.ToString();
-                    this.Invoke(() => SetTimerText(timerString, index), startTimer);
-                    this.Invoke(() => RegularFonteScript(index), startTimer);
+                    if (parsedTimer != 0) {
+                        this.Invoke(() => SetTimerText(timerString, index), startTimer);
+                        this.Invoke(() => RegularFonteScript(index), startTimer);
+                        startTimer += 1f;
+                    } else {
+                        this.Invoke(() => SetTimerText("0", index), startTimer);
+                        startTimer += 0.5f;
+                    }
                     parsedTimer -= 1f;
-                    startTimer += 1f;
                 }
                 this.Invoke(() => SetPrefabBackground(index, fundoInicialPrefab), startTimer);
-                this.Invoke(() => SetTimerText("0", index), startTimer);
                 this.Invoke(() => highLightsToTrigger[index].SetActive(false), startTimer);
             }
             loopCounter++;
@@ -199,10 +220,10 @@ public class LerNivelColorido : MonoBehaviour {
             this.Invoke(() => {
                 textoExibirQtdRepeticoes.text = "Contador: " + repeticoes;
                 ResetControlPanel();
-            }, startTimer);
+            }, startTimer + 0.5f);
             
         }
-
+        /*
         this.Invoke(() => {
             for (int i = 0; i < execucoes.Count; i++) {
                 Destroy(execucoes[i].Prefab);
@@ -213,27 +234,44 @@ public class LerNivelColorido : MonoBehaviour {
         this.Invoke(() => inputFieldQtdRepeticoes.text = "", startTimer);
         this.Invoke(() => painelReferencia.GetComponentInChildren<TextMeshProUGUI>().text = "Instruções (0/3)", startTimer);
         this.Invoke(() => execucoes.Clear(), startTimer);
+        */
+        this.Invoke(() => painelControleExecs.transform.SetParent(mainUI.transform), startTimer + 0.5f);
+        this.Invoke(() => mainCam.enabled = true, startTimer + 0.5f);
+        this.Invoke(() => cameraToZoomIn.enabled = false, startTimer + 0.5f);
+        this.Invoke(() => ResetPainelControleTamanho(), startTimer + 0.5f);
     }
 
     // Parte console
 
-    public void ClearExecucoes() {
-        execucoes.Clear();
-        Execucao novaExecucao = new Execucao(0, 1, 3);
-        GameObject prefab = Instantiate(prefabExecucao, painelReferencia.transform.position - Vector3.up * 0.85f * (execucoes.Count + 1), Quaternion.identity, painelReferencia.transform.parent.transform);
-        prefab.transform.GetChild(0).GetComponent<Image>().color = coresBotao[novaExecucao.Cor];
-        prefab.transform.GetChild(1).GetChild(0).GetComponent<TextMeshProUGUI>().text = novaExecucao.Nivel.ToString();
-        prefab.transform.GetChild(2).GetChild(0).GetComponent<TextMeshProUGUI>().text = novaExecucao.Tempo.ToString() + "s";
-        novaExecucao.Prefab = prefab;
-        novaExecucao.Image = prefab.transform.GetChild(0).GetComponent<Image>();
-        novaExecucao.TextNivel = prefab.transform.GetChild(1).GetChild(0).GetComponent<TextMeshProUGUI>();
-        novaExecucao.TextTempo = prefab.transform.GetChild(2).GetChild(0).GetComponent<TextMeshProUGUI>();
-        execucoes.Insert(0, novaExecucao);
-        painelReferencia.GetComponentInChildren<TextMeshProUGUI>().text = "Instruções (" + execucoes.Count.ToString() + "/3)";
-        inputFieldFuncao1.text = "";
-        inputFieldFuncao2.text = "";
-        qtdRepeticoes = 0;
-        inputQtdRepeticoesPeloConsole.text = "";
+    public void ClearExecucoesSemConsole() {
+        if (botoesParaDesabilitar.activeSelf) {
+            for (int i = 0; i < execucoes.Count; i++) {
+                Destroy(execucoes[i].Prefab);
+            }
+            ResetarFonte();
+            textoExibirQtdRepeticoes.text = "";
+            inputFieldQtdRepeticoes.text = "";
+            painelReferencia.GetComponentInChildren<TextMeshProUGUI>().text = "Instruções (0/3)";
+            execucoes.Clear();
+        }
+        else {
+            execucoes.Clear();
+            Execucao novaExecucao = new Execucao(0, 1, 3);
+            GameObject prefab = Instantiate(prefabExecucao, painelReferencia.transform.position - Vector3.up * 0.66f * (execucoes.Count + 1), Quaternion.identity, painelReferencia.transform.parent.transform);
+            prefab.transform.GetChild(0).GetComponent<Image>().color = coresBotao[novaExecucao.Cor];
+            prefab.transform.GetChild(1).GetChild(0).GetComponent<TextMeshProUGUI>().text = novaExecucao.Nivel.ToString();
+            prefab.transform.GetChild(2).GetChild(0).GetComponent<TextMeshProUGUI>().text = novaExecucao.Tempo.ToString() + "s";
+            novaExecucao.Prefab = prefab;
+            novaExecucao.Image = prefab.transform.GetChild(0).GetComponent<Image>();
+            novaExecucao.TextNivel = prefab.transform.GetChild(1).GetChild(0).GetComponent<TextMeshProUGUI>();
+            novaExecucao.TextTempo = prefab.transform.GetChild(2).GetChild(0).GetComponent<TextMeshProUGUI>();
+            execucoes.Insert(0, novaExecucao);
+            painelReferencia.GetComponentInChildren<TextMeshProUGUI>().text = "Instruções (" + execucoes.Count.ToString() + "/3)";
+            inputFieldFuncao1.text = "";
+            inputFieldFuncao2.text = "";
+            qtdRepeticoes = 0;
+            inputQtdRepeticoesPeloConsole.text = "";
+        }
     }
 
     public void ExecutarPeloConsole() {
@@ -246,7 +284,7 @@ public class LerNivelColorido : MonoBehaviour {
             return;
         }
         ExecutarScript();
-        this.Invoke(() => ClearExecucoes(), startTimer);
+        //this.Invoke(() => ClearExecucoes(), startTimer);
         this.Invoke(() => telaConsoleParaDesabilitar.SetActive(true), startTimer);
     }
 
@@ -300,7 +338,7 @@ public class LerNivelColorido : MonoBehaviour {
 
     public void DecrementarTempo() {
         double novoTempo = double.Parse(tempoInputField.text.Split("s")[0]) - 1;
-        if (novoTempo < 0) {
+        if (novoTempo <= 0) {
             return;
         }
         tempoInputField.text = novoTempo.ToString() + "s";
