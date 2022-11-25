@@ -54,6 +54,9 @@ public class LerNivelColorido : MonoBehaviour {
 
     [Header("Botoões para desabilitar")]
     public GameObject botoesParaDesabilitar;
+    public GameObject botoesParaDesabilitarConsole;
+    public GameObject painelBotoesAtv2;
+    public GameObject botaoLimparExecs;
 
     [Header("Configurações do console")]
     public TMP_InputField inputFieldFuncao1;
@@ -80,6 +83,8 @@ public class LerNivelColorido : MonoBehaviour {
     private Color32 fundoBranco = new(255, 255, 255, 255);
     private Execucao execucaoDoInput1;
     private Execucao execucaoDoInput2;
+
+    private bool shouldClearExecsInTheEnd = false;
 
 
     // Start is called before the first frame update
@@ -138,8 +143,6 @@ public class LerNivelColorido : MonoBehaviour {
         } else {
             if (regexFuncao.IsMatch(targetInputField.text)) {
                 string[] valores = targetInputField.text.Split(",");
-                targetInputField.image.color = Color32.Lerp(fundoBranco, fundoMatchRegex, 1f);
-                this.Invoke(() => targetInputField.image.color = Color32.Lerp(fundoMatchRegex, fundoBranco, 1f), 1);
                 Execucao novaExecucao = new Execucao(int.Parse(valores[2].Split(")")[0]), int.Parse(valores[1]), int.Parse(valores[0].Split("(")[1]));
                 int indice;
                 if (targetInputField.name.Contains("1")) {
@@ -151,14 +154,22 @@ public class LerNivelColorido : MonoBehaviour {
                 if (indice == 1 && execucaoDoInput1 != null || indice == 2 && execucaoDoInput2 != null) {
                     Execucao execucao = execucoes.ElementAt(indice);
                     if (execucao != null) {
-                        this.Invoke(() => targetInputField.image.color = Color32.Lerp(fundoNotMatchRegex, fundoBranco, 1f), 1);
+                        targetInputField.image.color = Color32.Lerp(fundoBranco, fundoNotMatchRegex, 1f);
+                        this.Invoke(() => targetInputField.image.color = Color32.Lerp(fundoNotMatchRegex, fundoBranco, 1f), 1f);
                         return null;
                     }
                 }
+                if (indice == 1) {
+                    execucaoDoInput1 = novaExecucao;
+                } else {
+                    execucaoDoInput2 = novaExecucao;
+                }
+                targetInputField.image.color = Color32.Lerp(fundoBranco, fundoMatchRegex, 1f);
+                this.Invoke(() => targetInputField.image.color = Color32.Lerp(fundoNotMatchRegex, fundoBranco, 1f), 1f);
                 return novaExecucao;
             } else {
                 targetInputField.image.color = Color32.Lerp(fundoBranco, fundoNotMatchRegex, 1f);
-                this.Invoke(() => targetInputField.image.color = Color32.Lerp(fundoNotMatchRegex, fundoBranco, 1f), 1);
+                this.Invoke(() => targetInputField.image.color = Color32.Lerp(fundoNotMatchRegex, fundoBranco, 1f), 1f);
                 Debug.Log("Regex didn't match for following text: " + targetInputField.text);
                 return null;
             }
@@ -174,23 +185,36 @@ public class LerNivelColorido : MonoBehaviour {
         spriteRenderer.sprite = sprites[0, 0];
         botaoColorido.image.color = coresBotao[0];
         botoesParaDesabilitar.SetActive(true);
+        botaoLimparExecs.SetActive(true);
     }
     
     private void ResetPainelControleTamanho() {
-        painelControleExecs.GetComponent<RectTransform>().offsetMax = new Vector2(-15, -40);
+        Vector2 newSize = cameraToZoomIn.isActiveAndEnabled ? new Vector2(-400, -40) : new Vector2(-15, -40);
+        painelControleExecs.GetComponent<RectTransform>().offsetMax = newSize;
         painelControleExecs.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, 437.56f);
         painelControleExecs.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, 338.61f);
     }
 
     public void ExecutarScript() {
+        Camera mainCam = Camera.main;
+        if (painelBotoesAtv2.activeSelf) {
+            if (execucoes.Count == 0 ) {
+                AdicionarECriarExecucao();
+                shouldClearExecsInTheEnd = true;
+            }
+            cameraToZoomIn.gameObject.SetActive(true);
+            cameraToZoomIn.enabled = true;
+            mainCam.enabled = false;
+            painelControleExecs.transform.SetParent(canvasWithZoomedCam.transform);
+            ResetPainelControleTamanho();
+        } else {
+            botoesParaDesabilitarConsole.SetActive(false);
+        }
+        botaoLimparExecs.SetActive(false);
         startTimer = 0.5f;
         int loopCounter = 0;
         textoExibirQtdRepeticoes.text = "Contador: " + qtdRepeticoes;
-        Camera mainCam = Camera.main;
-        cameraToZoomIn.enabled = true;
-        mainCam.enabled = false;
-        painelControleExecs.transform.SetParent(canvasWithZoomedCam.transform);
-        ResetPainelControleTamanho();        
+              
         while (qtdRepeticoes > loopCounter) {
             for (int i = 0; i < execucoes.Count; i++) {
                 double parsedTimer = execucoes[i].Tempo;
@@ -220,7 +244,7 @@ public class LerNivelColorido : MonoBehaviour {
             this.Invoke(() => {
                 textoExibirQtdRepeticoes.text = "Contador: " + repeticoes;
                 ResetControlPanel();
-            }, startTimer + 0.5f);
+            }, startTimer);
             
         }
         /*
@@ -236,18 +260,28 @@ public class LerNivelColorido : MonoBehaviour {
         this.Invoke(() => execucoes.Clear(), startTimer);
         */
         this.Invoke(() => painelControleExecs.transform.SetParent(mainUI.transform), startTimer + 0.5f);
-        this.Invoke(() => mainCam.enabled = true, startTimer + 0.5f);
-        this.Invoke(() => cameraToZoomIn.enabled = false, startTimer + 0.5f);
-        this.Invoke(() => ResetPainelControleTamanho(), startTimer + 0.5f);
+        if (painelBotoesAtv2.activeSelf) {
+            this.Invoke(() => mainCam.enabled = true, startTimer + 0.5f);
+            this.Invoke(() => cameraToZoomIn.enabled = false, startTimer + 0.5f);
+            this.Invoke(() => ResetPainelControleTamanho(), startTimer + 0.5f);
+        } else {
+            botoesParaDesabilitarConsole.SetActive(true);
+        }
+
+        this.Invoke(() => botaoLimparExecs.SetActive(true), startTimer + 0.5f);
+
+        if (shouldClearExecsInTheEnd) {
+            this.Invoke(() => ClearExecucoesSemConsole(), startTimer + 0.5f);
+        }
     }
 
     // Parte console
 
     public void ClearExecucoesSemConsole() {
-        if (botoesParaDesabilitar.activeSelf) {
-            for (int i = 0; i < execucoes.Count; i++) {
-                Destroy(execucoes[i].Prefab);
-            }
+        for (int i = 0; i < execucoes.Count; i++) {
+            Destroy(execucoes[i].Prefab);
+        }
+        if (painelBotoesAtv2.activeSelf) {
             ResetarFonte();
             textoExibirQtdRepeticoes.text = "";
             inputFieldQtdRepeticoes.text = "";
@@ -257,7 +291,7 @@ public class LerNivelColorido : MonoBehaviour {
         else {
             execucoes.Clear();
             Execucao novaExecucao = new Execucao(0, 1, 3);
-            GameObject prefab = Instantiate(prefabExecucao, painelReferencia.transform.position - Vector3.up * 0.66f * (execucoes.Count + 1), Quaternion.identity, painelReferencia.transform.parent.transform);
+            GameObject prefab = Instantiate(prefabExecucao, painelReferencia.transform.position - Vector3.up * 0.66f, Quaternion.identity, painelReferencia.transform.parent.transform);
             prefab.transform.GetChild(0).GetComponent<Image>().color = coresBotao[novaExecucao.Cor];
             prefab.transform.GetChild(1).GetChild(0).GetComponent<TextMeshProUGUI>().text = novaExecucao.Nivel.ToString();
             prefab.transform.GetChild(2).GetChild(0).GetComponent<TextMeshProUGUI>().text = novaExecucao.Tempo.ToString() + "s";

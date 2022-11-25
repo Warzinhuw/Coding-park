@@ -141,7 +141,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &38753046
 RectTransform:
   m_ObjectHideFlags: 0
@@ -323,6 +323,7 @@ MonoBehaviour:
   textoExibirQtdRepeticoes: {fileID: 0}
   painelTutorial: {fileID: 0}
   botoesParaDesabilitar: {fileID: 0}
+  painelBotoesAtv2: {fileID: 0}
   inputFieldFuncao1: {fileID: 0}
   inputFieldFuncao2: {fileID: 0}
   inputQtdRepeticoesPeloConsole: {fileID: 0}
@@ -1168,6 +1169,8 @@ RectTransform:
   m_Children:
   - {fileID: 842050474}
   - {fileID: 540154257}
+  - {fileID: 1574519630}
+  - {fileID: 2031324610}
   m_Father: {fileID: 1120397829}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4264,6 +4267,7 @@ MonoBehaviour:
   textoExibirQtdRepeticoes: {fileID: 0}
   painelTutorial: {fileID: 0}
   botoesParaDesabilitar: {fileID: 0}
+  painelBotoesAtv2: {fileID: 0}
   inputFieldFuncao1: {fileID: 0}
   inputFieldFuncao2: {fileID: 0}
   inputQtdRepeticoesPeloConsole: {fileID: 0}
@@ -6460,7 +6464,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!20 &801332510
 Camera:
   m_ObjectHideFlags: 0
@@ -9943,8 +9947,10 @@ MonoBehaviour:
     vamos entender o que acontece com a fonte nessa atividade.\n\nExperimente <color=#FF4C4C>voc\xEA
     mesmo</color> pressionar os bot\xF5es de \"<color=#F8D85F>N\xEDvel</color>\"
     e \"<color=#F8D85F>Cor</color>\" e veja o que acontece quando mudamos os valores
-    dessas <color=#FF4C4C>vari\xE1veis</color>.\n\nQuando quiser seguir para a pr\xF3xima
-    parte da atividade, pressione o bot\xE3o <color=#F99120>Continuar</color>."
+    dessas <color=#FF4C4C>vari\xE1veis</color>.\n\nA vari\xE1vel \"tempo\" \xE9 utilizada
+    para controlar o tempo de dura\xE7\xE3o de uma execu\xE7\xE3o.\n\nQuando quiser
+    seguir para a pr\xF3xima parte da atividade, pressione o bot\xE3o <color=#F99120>Continuar</color>.\n\nPressione
+    <color=#F99120>Executar</color> para rodar uma instru\xE7\xE3o."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
@@ -10226,6 +10232,7 @@ MonoBehaviour:
   textoExibirQtdRepeticoes: {fileID: 572376439}
   painelTutorial: {fileID: 467196532}
   botoesParaDesabilitar: {fileID: 85206217}
+  painelBotoesAtv2: {fileID: 485716512}
   inputFieldFuncao1: {fileID: 1175347196}
   inputFieldFuncao2: {fileID: 509697699}
   inputQtdRepeticoesPeloConsole: {fileID: 1819657108}
@@ -10439,8 +10446,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4279440147
-  m_fontColor: {r: 0.0754717, g: 0.0754717, b: 0.0754717, a: 1}
+    rgba: 3457356563
+  m_fontColor: {r: 0.0754717, g: 0.0754717, b: 0.0754717, a: 0.80784315}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -10668,7 +10675,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1258659884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10682,7 +10689,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -10964,6 +10971,7 @@ MonoBehaviour:
   textoExibirQtdRepeticoes: {fileID: 0}
   painelTutorial: {fileID: 0}
   botoesParaDesabilitar: {fileID: 0}
+  painelBotoesAtv2: {fileID: 0}
   inputFieldFuncao1: {fileID: 0}
   inputFieldFuncao2: {fileID: 0}
   inputQtdRepeticoesPeloConsole: {fileID: 0}
@@ -12233,6 +12241,82 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1536109558}
+  m_CullTransparentMesh: 1
+--- !u!1 &1574519629
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1574519630}
+  - component: {fileID: 1574519632}
+  - component: {fileID: 1574519631}
+  m_Layer: 5
+  m_Name: Image (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1574519630
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1574519629}
+  m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 156317921}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+  m_AnchorMin: {x: 0.4309817, y: 0.80753666}
+  m_AnchorMax: {x: 0.524253, y: 0.97460544}
+  m_AnchoredPosition: {x: -1.5, y: -0.5}
+  m_SizeDelta: {x: -5.5, y: 7.529999}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1574519631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1574519629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: f26ae640429607c4aa84cf5ce839d528, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1574519632
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1574519629}
   m_CullTransparentMesh: 1
 --- !u!1 &1576374603
 GameObject:
@@ -15253,6 +15337,7 @@ MonoBehaviour:
   textoExibirQtdRepeticoes: {fileID: 0}
   painelTutorial: {fileID: 0}
   botoesParaDesabilitar: {fileID: 0}
+  painelBotoesAtv2: {fileID: 0}
   inputFieldFuncao1: {fileID: 0}
   inputFieldFuncao2: {fileID: 0}
   inputQtdRepeticoesPeloConsole: {fileID: 0}
@@ -15556,7 +15641,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2007960616
 RectTransform:
   m_ObjectHideFlags: 0
@@ -15670,6 +15755,82 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2007960615}
+  m_CullTransparentMesh: 1
+--- !u!1 &2031324609
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2031324610}
+  - component: {fileID: 2031324612}
+  - component: {fileID: 2031324611}
+  m_Layer: 5
+  m_Name: Image (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2031324610
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2031324609}
+  m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 156317921}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+  m_AnchorMin: {x: 0.11240139, y: 0.7966438}
+  m_AnchorMax: {x: 0.2024648, y: 0.9832875}
+  m_AnchoredPosition: {x: 1.3999634, y: 0}
+  m_SizeDelta: {x: -2.5, y: -1.4700012}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2031324611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2031324609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: f26ae640429607c4aa84cf5ce839d528, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2031324612
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2031324609}
   m_CullTransparentMesh: 1
 --- !u!1 &2051059493
 GameObject:
@@ -16269,6 +16430,7 @@ MonoBehaviour:
   textoExibirQtdRepeticoes: {fileID: 0}
   painelTutorial: {fileID: 0}
   botoesParaDesabilitar: {fileID: 0}
+  painelBotoesAtv2: {fileID: 0}
   inputFieldFuncao1: {fileID: 0}
   inputFieldFuncao2: {fileID: 0}
   inputQtdRepeticoesPeloConsole: {fileID: 0}
@@ -16506,7 +16668,7 @@ MonoBehaviour:
         m_CallState: 1
       - m_Target: {fileID: 1211880034}
         m_TargetAssemblyTypeName: LerNivelColorido, Assembly-CSharp
-        m_MethodName: ClearExecucoes
+        m_MethodName: ClearExecucoesSemConsole
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
