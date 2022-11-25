@@ -4184,7 +4184,7 @@ MonoBehaviour:
   speed: 4
   circle: {fileID: 1008748591}
   outerCircle: {fileID: 1947038285}
-  playerRigidBody: {fileID: 0}
+  playerRigidBody: {fileID: 510440796}
   estaOlhandoParaDireita: 1
 --- !u!1 &529899584
 GameObject:
