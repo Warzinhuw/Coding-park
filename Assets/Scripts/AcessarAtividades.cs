@@ -17,7 +17,7 @@ public class AcessarAtividades : MonoBehaviour
         
     }
 
-    public void CarregarAtividade(string nomeAtividade) {
+    public static void CarregarAtividade(string nomeAtividade) {
         SceneManager.LoadScene(nomeAtividade);
     }
 }

@@ -4,14 +4,13 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class nextHighlight : MonoBehaviour
+public class nextHighlightAtv2 : MonoBehaviour
 {
     [Header("Objetos para highlight")]
     public GameObject[] highlights;
     public GameObject buttonsIncrDecr;
     public GameObject highlightsObject;
     public GameObject[] highlightsObjectCodigo;
-
 
     public GameObject tutorialPanel;
     public GameObject botaoParaDesabilitar1x;
@@ -44,12 +43,13 @@ public class nextHighlight : MonoBehaviour
                 highlightsObjectCodigo[currentHighlight - 1].SetActive(false);
             }
             highlights[currentHighlight].SetActive(true);
-            if (currentHighlight < highlightsObjectCodigo.Length - 1) 
-                highlightsObjectCodigo[currentHighlight].SetActive(true);
+            highlightsObjectCodigo[currentHighlight].SetActive(true);
             if (currentHighlight == highlights.Length-1) {
                 buttonsIncrDecr.SetActive(true);
-                botaoParaDesabilitar1x.SetActive(false);
             }
+        } else {
+            tutorialPanel.SetActive(false);
+            highlightsObject.SetActive(false);
         }
     }
 }

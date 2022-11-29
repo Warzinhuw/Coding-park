@@ -18,6 +18,8 @@ public class ExibirBotao : MonoBehaviour
     [Header("Tela do comutador para abrir")]
     public GameObject tela;
     public GameObject telaTutorial;
+    public GameObject telaPainelControle;
+    public GameObject telaPCodigoFonte;
 
     private int estadoBotao = 0;
 
@@ -54,13 +56,19 @@ public class ExibirBotao : MonoBehaviour
         player.GetComponent<Rigidbody2D>().isKinematic = true;
         player.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         tela.SetActive(true);
-        telaTutorial.SetActive(true);
+        if(telaTutorial)
+            telaTutorial.SetActive(true);
         ResetarBotao();
     }
 
     void FecharTela() {
         tela.SetActive(false);
-        telaTutorial.SetActive(false);
+        if(telaTutorial)
+            telaTutorial.SetActive(false);
+        if (telaPainelControle)
+            telaPainelControle.SetActive(false);
+        if (telaPCodigoFonte)
+            telaPCodigoFonte.SetActive(false);
         player.GetComponent<Rigidbody2D>().isKinematic = false;
         ResetarBotao();
     }

@@ -15,6 +15,7 @@ public class lerNivel : MonoBehaviour {
     // Start is called before the first frame update
     void Start() {
         inputField = gameObject.GetComponent<TMP_InputField>();
+        Debug.Log("inputField carrgado: " + inputField.text);
     }
 
     // Update is called once per frame
@@ -24,6 +25,7 @@ public class lerNivel : MonoBehaviour {
 
     public void incrementarNivelFonte() {
         int estadoAtual = int.Parse(inputField.text);
+        Debug.Log("estado atual: " + estadoAtual);
         int novoEstadoFonte = estadoAtual + 1;
         AtualizarTextoFonte(estadoAtual, novoEstadoFonte);
     }
