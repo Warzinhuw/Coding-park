@@ -9,10 +9,13 @@ public class CameraController : MonoBehaviour
 
     public GameObject player;
     public float smoothTimeX;
+    public bool freezePlayer;
 
     // Start is called before the first frame update
     void Start() {
         playerTransform = player.GetComponent<Transform>();
+        if(freezePlayer)
+            player.GetComponent<Rigidbody2D>().isKinematic = true;
     }
 
     // Update is called once per frame

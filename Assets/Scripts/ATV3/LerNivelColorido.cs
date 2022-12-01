@@ -39,6 +39,7 @@ public class LerNivelColorido : MonoBehaviour {
     [Header("Botão colorido")]
     public Button botaoColorido;
     public Color[] coresBotao;
+    //3CABE9 6E8EFF 00187B
 
     [Header("Botao do Nível")]
     public TextMeshProUGUI nivelInputField;
@@ -77,7 +78,7 @@ public class LerNivelColorido : MonoBehaviour {
     private List<Execucao> execucoes = new();
     private int qtdRepeticoes = 1;
 
-    private Regex regexFuncao = new Regex("^executarInstrucao\\([1-5]\\s*,\\s*[0-2]+,\\s*[0-2]+\\);$");
+    private Regex regexFuncao = new Regex("^alteraFonte\\([1-5]\\s*,\\s*[0-2]+,\\s*[0-2]+\\);$");
     private Color32 fundoMatchRegex = new(83, 255, 113, 255);
     private Color32 fundoNotMatchRegex = new(255, 72, 37, 255);
     private Color32 fundoBranco = new(255, 255, 255, 255);
@@ -100,7 +101,6 @@ public class LerNivelColorido : MonoBehaviour {
         indiceCor = 0;
         int index = 0;
         sprites = new Sprite[spritesFonte.Length, 3];
-        Debug.Log("tamanho sprites: " + spritesFonte.Length);
         for (int i = 0; i < spritesFonte.Length / 3; i++) {
             for (int n = 0; n < 3; n++) {
                 sprites[i, n] = spritesFonte[index++];
@@ -189,7 +189,11 @@ public class LerNivelColorido : MonoBehaviour {
     }
     
     private void ResetPainelControleTamanho() {
-        Vector2 newSize = cameraToZoomIn.isActiveAndEnabled ? new Vector2(-400, -40) : new Vector2(-15, -40);
+        painelControleExecs.GetComponent<RectTransform>().pivot = cameraToZoomIn.isActiveAndEnabled ? new(1, 0) : new(1, 1);
+        painelControleExecs.GetComponent<RectTransform>().anchorMin = cameraToZoomIn.isActiveAndEnabled ? new(1, 0) : new(1, 1);
+        painelControleExecs.GetComponent<RectTransform>().anchorMax = cameraToZoomIn.isActiveAndEnabled ? new(1, 0) : new(1, 1);
+        Vector2 newSize = cameraToZoomIn.isActiveAndEnabled ? new Vector2(0, 0) : new Vector2(-15, -40);
+        painelControleExecs.GetComponent<RectTransform>().offsetMin = newSize;
         painelControleExecs.GetComponent<RectTransform>().offsetMax = newSize;
         painelControleExecs.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, 437.56f);
         painelControleExecs.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, 338.61f);
@@ -376,6 +380,29 @@ public class LerNivelColorido : MonoBehaviour {
             return;
         }
         tempoInputField.text = novoTempo.ToString() + "s";
+    }
+
+    public void IncrementarQtdReps() {
+        try {
+            qtdRepeticoes = int.Parse(inputFieldQtdRepeticoes.text);
+        } catch {
+            qtdRepeticoes = 0;
+        }
+        qtdRepeticoes++;
+        inputFieldQtdRepeticoes.text = qtdRepeticoes.ToString();
+    }
+
+    public void DecrementarQtdReps() {
+        try {
+            qtdRepeticoes = int.Parse(inputFieldQtdRepeticoes.text);
+        }
+        catch {
+            qtdRepeticoes = 0;
+        }
+        if (qtdRepeticoes - 1 >= 1) {
+            qtdRepeticoes--;
+            inputFieldQtdRepeticoes.text = qtdRepeticoes.ToString();
+        }
     }
 
     public void SetQtdRepeticoes() {

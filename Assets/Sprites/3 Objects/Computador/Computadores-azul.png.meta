@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c291f2da918bea049939c64e0438b1eb
+guid: eb2243600e7766f45a277380567c7a2d
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -128,64 +128,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fountain_verde_spriteSheet_0
+      name: Computadores-azul_0
       rect:
         serializedVersion: 2
-        x: 4
+        x: 6
         y: 0
-        width: 64
-        height: 64
+        width: 18
+        height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6124aed09216d274bbd2a0acb33a614c
-      internalID: 832067595
+      spriteID: d5eee81e5311c9a4c98683eb21f6baa3
+      internalID: -856039918
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fountain_verde_spriteSheet_1
+      name: Computadores-azul_1
       rect:
         serializedVersion: 2
-        x: 76
+        x: 38
         y: 0
-        width: 64
-        height: 68
+        width: 18
+        height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d60b8328c3e17bc418fee90d1cd05614
-      internalID: -1942395087
+      spriteID: 95138f39edbaa6c43bd35519b4d51021
+      internalID: -1737813129
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fountain_verde_spriteSheet_2
+      name: Computadores-azul_2
       rect:
         serializedVersion: 2
-        x: 148
+        x: 70
         y: 0
-        width: 64
-        height: 69
+        width: 18
+        height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b2d5eec9e3413f43bb5d1b7ccd5c2dc
-      internalID: 1279118568
+      spriteID: 4bbad62235d266141b6a6e89ca6a7629
+      internalID: -1428602786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Computadores-azul_3
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 0
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cb965b94419e524da20fc04bc242493
+      internalID: -423345491
       vertices: []
       indices: 
       edges: []
@@ -201,9 +222,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      fountain_verde_spriteSheet_0: 832067595
-      fountain_verde_spriteSheet_2: 1279118568
-      fountain_verde_spriteSheet_1: -1942395087
+      Computadores-azul_3: -423345491
+      Computadores-azul_2: -1428602786
+      Computadores-azul_1: -1737813129
+      Computadores-azul_0: -856039918
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
